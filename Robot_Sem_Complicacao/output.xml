@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230225 08:10:22.080" rpa="false" schemaversion="3">
+<suite id="s1" name="Chronos" source="c:\Users\Public\Documents\Robot_Sem_Complicacao\chronos.robot">
+<test id="s1-t1" name="chronos teste" line="14">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230225 08:10:22.766" level="INFO">Opening browser 'chrome' to base url 'https://www.demoblaze.com/'.</msg>
+<status status="PASS" starttime="20230225 08:10:22.765" endtime="20230225 08:10:27.491"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230225 08:10:27.496" endtime="20230225 08:10:27.882"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>Laptops</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230225 08:10:27.887" level="INFO">Clicking link 'Laptops'.</msg>
+<status status="PASS" starttime="20230225 08:10:27.884" endtime="20230225 08:10:28.582"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>link=MacBook Pro</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230225 08:10:28.583" endtime="20230225 08:10:29.223"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>MacBook Pro</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230225 08:10:29.265" level="INFO">Clicking link 'MacBook Pro'.</msg>
+<status status="PASS" starttime="20230225 08:10:29.254" endtime="20230225 08:10:30.200"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//div[2]/div//a</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230225 08:10:30.201" endtime="20230225 08:10:30.816"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//div[2]//div/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230225 08:10:30.819" level="INFO">Clicking element 'xpath=//div[2]//div/a'.</msg>
+<status status="PASS" starttime="20230225 08:10:30.818" endtime="20230225 08:10:30.985"/>
+</kw>
+<kw name="Alert Should Be Present" library="SeleniumLibrary">
+<doc>Verifies that an alert is present and by default, accepts it.</doc>
+<msg timestamp="20230225 08:10:31.029" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20230225 08:10:31.020" endtime="20230225 08:10:31.618"/>
+</kw>
+<status status="PASS" starttime="20230225 08:10:22.763" endtime="20230225 08:10:31.619"/>
+</test>
+<doc>Robot Framework_Sem_complicacao</doc>
+<status status="PASS" starttime="20230225 08:10:22.097" endtime="20230225 08:10:31.651"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Chronos">Chronos</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
